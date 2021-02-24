@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    background:rgb(236, 236, 232);
+}
+.body-container {
+   .header-container {
+    position: relative;
+    text-align: center;
+        .header-image {
+            width: 100%;
+            height: 40vh;
+            object-fit: cover;
+        }
+
+        .header-text {
+            font-family: PT serif;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.3em;
+            text-shadow: 2px 2px #423f3f;
+        }
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(39, 38, 38);
+        -webkit-box-shadow: 4px 3px 6px 6px #28bd59;
+        -moz-box-shadow: 4px 3px 6px 6px #28bd59;
+             box-shadow: 4px 3px 6px 6px #28bd59;
+        
+
+        .footer-text {
+            color: rgb(114, 108, 108);
+            font-size: 0.8em;
+            text-align: end;
+            padding-right: 10px;
+        }
+    }
+}
+
+@media(max-width: 1000px) {
+    .body-container .header-container .header-text {
+        font-size: 1.9em;
+    }
+}
+
+@media(max-width: 550px) {
+    .body-container .header-container .header-text {
+        font-size: 1.2em;
+    }
+
+    .body-container .header-container .header-image {
+        height: 20vh;
+    }
+
+    .body-container .footer .footer-text {
+        font-size: 0.65em;
+    }
+}

@@ -1,0 +1,83 @@
+.selector-container {
+    background-color: #fbfbfb;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 30%;
+    position: absolute;
+    height: 400px;
+    overflow-y: auto;
+    border-radius: 15px;
+    opacity: 0.8;
+
+    .selector-headline {
+        font-size: 1.7em;
+        color: rgb(13, 128, 28);
+        font-family: PT serif;
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 10px;
+
+    }
+
+    .MuiSelect-selectMenu {
+        color: black;
+    }
+
+    .MuiFormLabel-root {
+        color:black;
+    }
+
+    .MuiFormLabel-root.Mui-focused {
+        color: black;
+    }
+
+    .MuiFormControl-root {
+        position: absolute;
+        left: 32px;
+    }
+
+    
+}
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(78, 144, 40); 
+   border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(22, 73, 13); 
+  }
+
+  @media(max-width: 1000px) {
+    .selector-container .selector-headline {
+        font-size: 1.6em;
+    }
+    .selector-container .MuiFormControl-root {
+        left: 5px;
+    }
+    .MuiFormControlLabel-root .MuiTypography-body1 {
+        font-size: 0.8em;
+    }
+
+    @media(max-width: 550px) {
+        .selector-container {
+            margin-left: 10px;
+            width: 90%;
+        }
+
+        .selector-container .MuiFormControl-root {
+            left: 0px;
+        }
+    }
+}

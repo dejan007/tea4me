@@ -1,0 +1,19 @@
+.sidebar-container {
+    position: fixed;
+    right: 0;
+    top: 40vh;
+    height: 100%;
+    z-index: 4;
+    width: 50px;
+    background-color: rgb(243, 239, 239);
+    box-shadow: 0 2px 10px rgba(#000, 0.15);
+    transition: all 700ms;
+    border-left: solid thin rgb(204, 188, 188);
+    color: white;
+
+    &:hover {
+        width: 300px;
+        color:black;
+    }
+
+}

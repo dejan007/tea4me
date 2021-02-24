@@ -1,0 +1,115 @@
+.teas-container {
+    width: 41%;
+    position:absolute;
+    left: 45%;
+    top: 111%;
+    padding-bottom: 100px;
+
+    .no-conditions-text {
+        color: rgb(182, 178, 179);
+        font-weight: bolder;
+        position: absolute;
+        left: 30%;
+        top: 50%;
+
+    
+    }
+
+    .no-result-text {
+        color: rgb(182, 178, 179);
+        font-weight: bolder;
+        position: absolute;
+        left: 30%;
+        top: 50%;
+    }
+
+    .one-tea-container {
+        margin-bottom: 10px;
+        height: auto;
+        position: relative;
+        border: thin green solid;
+        border-radius: 20px;
+        padding: 5px;
+
+        &:hover {
+            outline: none;
+            border-color: #1c5a29;
+            box-shadow: 0 0 15px #1c5a29;
+        }
+
+        .tea-image {
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            object-fit: cover;
+            border-radius: 20px;      
+            max-height: 250px; 
+         }
+
+        .header-tea-text {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            text-align: center;
+            font-family: PT serif;
+            color: rgb(54, 52, 52);
+
+            h2 {
+                margin-top: 4px;
+                margin-bottom: 4px;
+            }
+        }
+
+        .tea-description {
+            padding: 15px;
+            top: 15%;
+            background-color: rgb(110, 162, 78);
+            font-family: PT serif;
+            color: white;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+            text-align: justify;
+            border-radius: 10px;
+            height: auto;
+           // max-height: 100px;
+            transition: all 800ms;
+            overflow: hidden;
+            /* cursor: pointer;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;  
+            -webkit-box-orient: vertical; */
+
+            /* &:hover{ 
+                max-height: 600px;
+                height:auto;
+                text-overflow:unset;
+                -webkit-line-clamp:unset;
+            } */
+    
+        }
+
+        
+    } 
+}
+
+@media(max-width: 1000px) {
+    .teas-container .one-tea-container .header-tea-text {
+        font-size: 0.8em;
+    }
+    .teas-container .one-tea-container .tea-description {
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width: 550px) {
+   .teas-container {
+      top: 360%;
+      left: 2%;
+      width: 90%;
+   }
+
+   .teas-container .no-result-text {
+       left: 5%;
+   }
+}
