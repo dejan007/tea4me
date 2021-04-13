@@ -6,7 +6,6 @@ App finds the perfect tea/teas for given set of conditions. User can select up t
 
 Here are a few images: 
 
-![alt text](https://ibb.co/L1FVYND)
-
-![alt text](https://ibb.co/t2Y6NTm)
+https://ibb.co/L1FVYND
+https://ibb.co/t2Y6NTm
 
